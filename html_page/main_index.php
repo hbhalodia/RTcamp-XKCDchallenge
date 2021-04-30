@@ -4,11 +4,8 @@
 	<title>XKCD-Random Images</title>
 	<style type="text/css">
 		.parent{
-			align-content: center;
+			text-align:center; 
 			margin-top: 20%;
-			margin-left: auto;
-			margin-right: auto;
-			width: 60%;
 			
 		}
 
