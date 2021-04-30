@@ -19,12 +19,10 @@
             $to = $email;
             // More headers
             $headers .= 'From: <noreply@XKCD.in>' . "\r\n";
-            if(mail($to,$subject_mail,$msg,$headers)){
-                echo "<br>Done";
-            }
-            else{
+            if(!mail($to,$subject_mail,$msg,$headers)){
                 echo "<script>alert('Email Failed')</script>";
             }
+            
         }
         else{
             echo "Email Already Registerd";
