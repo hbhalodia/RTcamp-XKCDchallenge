@@ -8,7 +8,7 @@
 
 		$query = "UPDATE `visitors_email` SET is_verified='".$is_ver."' , is_subscribed = '".$is_sub."' WHERE email='".$email_id."' ";
 
-		if($email_registerd = mysqli_query($con,$query)){
+		if($verify = mysqli_query($con,$query)){
 			echo "Email is Verified";
 		}
 		else{
