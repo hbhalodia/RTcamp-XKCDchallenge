@@ -33,10 +33,10 @@
 </head>
 <body onload="return isValueorNot();">
 	<div class="parent">
-		<form>
+		<form action="../php_controllers/registerEmail.php" method="post">
 			<div>
 				<input type="email" autocomplete="off" onfocus="return isValueorNot();" onkeyup="return isValidEmail('Email is Invalid');" size="80" placeholder="Enter Email" id="validateEmail" name="email">
-				<input type="submit" id="register" name="submit" value="Register Email">
+				<input type="submit" id="register" name="register" value="Register Email">
 			</div><br>
 		</form>
 	</div>
