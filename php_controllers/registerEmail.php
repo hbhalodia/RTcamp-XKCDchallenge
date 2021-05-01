@@ -8,7 +8,6 @@
 
         if($email_registerd = mysqli_query($con,$query_register))
         {
-            echo "You Had recived One verification Link to Your Email, Please verified the email to Get the FUNNY XKCD Images";
             $email = $_POST['email'];
             $msg = "<html><head></head><body>";
             $msg .= "<a href='https://procit.ictmu.in/hit_rtCamp_xkcd/php_controllers/verify_email.php?email=".$email."'><h1>Verify Email</h1></a>";
@@ -22,6 +21,10 @@
             if(!mail($to,$subject_mail,$msg,$headers)){
                 echo "<script>alert('Email Failed')</script>";
             }
+            echo "<script type='text/javascript'>
+                        window.location.replace(\"../html_page/verification_page.php\");
+                    </script>
+                ";
             
         }
         else{

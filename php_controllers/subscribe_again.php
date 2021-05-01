@@ -8,7 +8,10 @@
 		$query = "UPDATE `visitors_email` SET is_subscribed = '".$is_sub."' WHERE email='".$email_id."' ";
 
 		if($subscribe= mysqli_query($con,$query)){
-			echo "Subscribed to XKCD!!You would Recive Images From Now.";
+			echo "<script type='text/javascript'>
+                        window.location.replace(\"../html_page/subscribed_again.php\");
+                    </script>
+                ";
 		}
 		else{
 			echo "Error";

@@ -2,11 +2,13 @@
 
 	$mysql_host = 'localhost'; 
 
-	$mysql_user = 'root'; 
+	$mysql_user = 'ictmu6ya_hit_bha';  
 
-	$DB_name = 'rtcamp';
+	$DB_name = 'ictmu6ya_rtcamp_hit';
+	
+	$DB_pass = 'Hit**008';
 	  
-	$con =  mysqli_connect($mysql_host, $mysql_user);
+	$con =  mysqli_connect($mysql_host, $mysql_user, $DB_pass);
 
 	if (! ($con)) 
 	{ 

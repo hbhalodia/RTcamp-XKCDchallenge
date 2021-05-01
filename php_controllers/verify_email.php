@@ -9,7 +9,10 @@
 		$query = "UPDATE `visitors_email` SET is_verified='".$is_ver."' , is_subscribed = '".$is_sub."' WHERE email='".$email_id."' ";
 
 		if($verify = mysqli_query($con,$query)){
-			echo "Email is Verified";
+			echo "<script type='text/javascript'>
+                        window.location.replace(\"../html_page/verified_page.php\");
+                    </script>
+                ";
 		}
 		else{
 		    echo "Error";
